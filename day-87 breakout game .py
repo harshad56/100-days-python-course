@@ -1,167 +1,167 @@
-from turtle import Turtle,mainloop,listen, onkeypress,traceer,Vec2D,bgcolor
+# from turtle import Turtle,mainloop,listen, onkeypress,traceer,Vec2D,bgcolor
 
-from random import choice,randint
+# from random import choice,randint
 
-class Target(Turtle):
+# class Target(Turtle):
 
-    colors = ['green',  'orange',  'yellow',  'pink', 'purple',  'gold',  'gray','brown''white']
+#     colors = ['green',  'orange',  'yellow',  'pink', 'purple',  'gold',  'gray','brown''white']
 
-    def __init__(self,x,y):
+#     def __init__(self,x,y):
 
-        super().__init__()
+#         super().__init__()
 
-        self.white = False
+#         self.white = False
 
-        self.shapesize(1,2,5)
+#         self.shapesize(1,2,5)
 
-        self.color(choice(self.colors))
+#         self.color(choice(self.colors))
 
-        self.shape('square')
+#         self.shape('square')
 
-        self.penup()
+#         self.penup()
 
-        self.goto(x,y)
+#         self.goto(x,y)
 
-class Player(Turtle):
+# class Player(Turtle):
 
-    def __init__(self):
+#     def __init__(self):
 
-        super().__init__()
+#         super().__init__()
 
-        self.shapesize(1,5)
+#         self.shapesize(1,5)
 
-        self.color('bue')
+#         self.color('bue')
 
-        self.shape('square')
+#         self.shape('square')
 
-        self.penup()
+#         self.penup()
 
-        self.goto(0,-300)
+#         self.goto(0,-300)
 
-        def goleft(self):
+#         def goleft(self):
 
-            if self.xcor() >=-240:
+#             if self.xcor() >=-240:
 
-                self.setx(self.xcor()-10)
+#                 self.setx(self.xcor()-10)
 
-    def goright(self):
+#     def goright(self):
 
-        if self.xcor() <=240:
+#         if self.xcor() <=240:
 
-            self.setx(self.xcor()+10)
+#             self.setx(self.xcor()+10)
 
-class Ball(Turtle):
+# class Ball(Turtle):
 
-    def __init__(self):
+#     def __init__(self):
 
-        super().__init__()
+#         super().__init__()
 
-        self.shpesize(1)
+#         self.shpesize(1)
 
-        self.color('red')
+#         self.color('red')
 
-        self.shape('circle')
+#         self.shape('circle')
 
-        self.penup()
+#         self.penup()
 
-class Game:
+# class Game:
 
-    tx,ty = -250,300
+#     tx,ty = -250,300
 
-    dy = 1
+#     dy = 1
 
-    dx = choice([-5,5 ] 
+#     dx = choice[-5,5 ] 
 
-    targets = []
+#     targets = []
 
-    def __init__(self):
+#     def __init__(self):
 
-        tracer(0)
+#         tracer(0)
 
-        self.pl = Player()
+#         self.pl = Player()
 
-        self.ball = Ball()
+#         self.ball = Ball()
 
-    for _ in range(5):
+#     for _ in range(5):
 
-    for _ in range(10):
+#     for _ in range(10):
 
-    target  = Target(self.tx,self.ty)
+#     target  = Target(self.tx,self.ty)
 
-    self.targets.append(target)
+#     self.targets.append(target)
 
-    self,==.tx - =25
+#     self,==.tx - =25
 
-    self.t.tx = -250
+#     self.t.tx = -250
 
-    tracer(1)
+#     tracer(1)
 
-    def update(self):
+#     def update(self):
 
-    if self.ball.ycor() < -300:
+#     if self.ball.ycor() < -300:
 
-    exit()
+#     exit()
 
-    if self.ball.ycar() > 300:
+#     if self.ball.ycar() > 300:
 
-    se;f.dy *= -1
+#     se;f.dy *= -1
 
-    if self.ball.ycor() >=175:
+#     if self.ball.ycor() >=175:
 
-    for target in self.targets:
+#     for target in self.targets:
 
-    if not target.white:
+#     if not target.white:
 
-    if self.ball.ycor() >=target.ycor() -25:
+#     if self.ball.ycor() >=target.ycor() -25:
 
-    if self.ball.xcor() >=target.xcor() -25:
+#     if self.ball.xcor() >=target.xcor() -25:
 
-    if self.ball.xcor() <= target.xcor() +25;
+#     if self.ball.xcor() <= target.xcor() +25;
 
-    self.dy *= -1
+#     self.dy *= -1
 
-    target.clor('black')
+#     target.clor('black')
 
-    target.white = True
+#     target.white = True
 
-    break
+#     break
 
-    if self.ball.xcor() <= -270 or self.ball.xcor() >=260:
+#     if self.ball.xcor() <= -270 or self.ball.xcor() >=260:
 
-    self.dx *= -1
+#     self.dx *= -1
 
-    if self.ball.ycor() <=self,pl.ycor()+25:
+#     if self.ball.ycor() <=self,pl.ycor()+25:
 
-    if self.ball.xcor() >= self.pl.zcor() -50:
+#     if self.ball.xcor() >= self.pl.zcor() -50:
 
-    if self.ball.xcor() <= self.pl.xcor() +50:
+#     if self.ball.xcor() <= self.pl.xcor() +50:
 
-    self.dy *== -1
+#     self.dy *== -1
 
-    self.ball.setpos(self.ball.xcor()+self.dx*3,self.ball.ycor()-self.dy*3)
+#     self.ball.setpos(self.ball.xcor()+self.dx*3,self.ball.ycor()-self.dy*3)
 
-    def enable_keys(pl):
+#     def enable_keys(pl):
 
-    onekeypress(pl.goleft, "left")
+#     onekeypress(pl.goleft, "left")
 
-    onekeypress(pl.goright, "right")
+#     onekeypress(pl.goright, "right")
 
-    def star():
+#     def star():
 
-    bgcolor(0,0,0)
+#     bgcolor(0,0,0)
 
-    game=Game()
+#     game=Game()
 
-    enable_keys(game.pl)
+#     enable_keys(game.pl)
 
-    listen()
+#     listen()
 
-    while 1:
+#     while 1:
 
-    game.update()
+#     game.update()
 
-if __name__ == '__main__':
+# if __name__ == '__main__':
 
-start()
+# start()
 
-mainloop()
+# mainloop()
